@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <div class="logout-button-container">
+        <a href="/logout"><button class="logout">Logout</button></a>
+    </div>
+    <div class="container">
+        <h2>Prediction Result</h2>
+        <p><b>Prediction:</b> {{ result }}</p>
+        <p><b>Your Input Details:</b></p>
+        <ul>
+            {% for key, value in data.items() %}
+            <li>{{ key }}: {{ value }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/home"><button>Go Back</button></a>
+    </div>
+</body>
+</html>

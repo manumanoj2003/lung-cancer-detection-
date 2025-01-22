@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('/static/images/lung_background.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem; /* Increased size for better emphasis */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Professional look with uppercase headings */
+    letter-spacing: 1px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+button.logout {
+    background: #FF6347;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+button.logout:hover {
+    background: #d94530;
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* Logout Button Container */
+.logout-button-container {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+/* Form Styling */
+form {
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 1.1rem;
+}
+
+form input,
+form select {
+    font-size: 1rem;
+}
+
